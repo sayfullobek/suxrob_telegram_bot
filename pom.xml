@@ -70,7 +70,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.8</version> <!-- Eng so'nggi versiya -->
+                <version>3.8.1</version> <!-- Eng so'nggi versiya -->
                 <configuration>
                     <release>17</release> <!-- Java versiyasini tanlang -->
                 </configuration>
@@ -78,4 +78,10 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
 </project>
