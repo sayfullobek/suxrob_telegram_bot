@@ -51,15 +51,11 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.11.0</version> <!-- Bu versiya o'rniga siz so'nggi versiyani ishlatishingiz mumkin -->
                 <configuration>
-                    <release>11</release> <!-- Bu orqali ko'rsatish mumkin -->
+                    <release>17</release> <!-- Bu orqali ko'rsatish mumkin -->
                 </configuration>
             </plugin>
         </plugins>
