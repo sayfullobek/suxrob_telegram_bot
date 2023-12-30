@@ -15,6 +15,8 @@
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>17</java.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -46,6 +48,21 @@
             <version>3.2.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.glassfish.hk2</groupId>
+            <artifactId>osgi-resource-locator</artifactId>
+            <version>1.0.1</version> <!-- Versiyani yangilab ko'ring -->
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.15.0</version> <!-- Yangi versiyani qo'shing -->
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.ext</groupId>
+            <artifactId>jersey-entity-filtering</artifactId>
+            <version>3.0.0</version> <!-- Boshqa versiyani tanlang -->
+        </dependency>
     </dependencies>
 
     <build>
@@ -53,11 +70,12 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.12.1</version> <!-- Bu versiya o'rniga siz so'nggi versiyani ishlatishingiz mumkin -->
+                <version>3.11.8</version> <!-- Eng so'nggi versiya -->
                 <configuration>
-                    <release>17</release> <!-- Bu orqali ko'rsatish mumkin -->
+                    <release>17</release> <!-- Java versiyasini tanlang -->
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>
