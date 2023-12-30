@@ -53,7 +53,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version> <!-- Bu versiya o'rniga siz so'nggi versiyani ishlatishingiz mumkin -->
+                <version>3.12.1</version> <!-- Bu versiya o'rniga siz so'nggi versiyani ishlatishingiz mumkin -->
                 <configuration>
                     <release>17</release> <!-- Bu orqali ko'rsatish mumkin -->
                 </configuration>
