@@ -1,4 +1,4 @@
-package kamol;
+package telegram_ol_bot.telegram.bot;
 
 import java.util.*;
 

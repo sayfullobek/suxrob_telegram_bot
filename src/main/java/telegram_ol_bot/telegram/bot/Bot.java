@@ -1,4 +1,4 @@
-package kamol;
+package telegram_ol_bot.telegram.bot;
 
 import org.checkerframework.checker.units.qual.Length;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -20,15 +20,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Bot extends TelegramLongPollingBot {
-    public static void main(String[] args) {
-        try {
-            TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
-            telegramBotsApi.registerBot(new Bot());
-        } catch (TelegramApiException e) {
-            System.err.println("Bot ishlamadi");
-        }
-    }
-
     @Override
     public String getBotUsername() {
         return BotConfig.BOT_USERNAME;
@@ -76,14 +67,14 @@ public class Bot extends TelegramLongPollingBot {
                     getBtn(chatId, "Tanlash", messageId, BotConfig.KIYA);
                 } else if (text.equals("BYD")) {
                     getBtn(chatId, "Tanlang", messageId, BotConfig.BYD);
-                }else if (text.equals("YUQ❌")) {
+                } else if (text.equals("YUQ❌")) {
                     getBtn(chatId, "Tanlang", messageId, BotConfig.CARS);
-                }else if (text.equals("HA✔")) {
+                } else if (text.equals("HA✔")) {
                     getBtn(chatId, "Tanlang", messageId, BotConfig.STT);
 //                    if (text.trim().length()==16){
-                }else if (text.equals("TASDIQLANDI✔")){
+                } else if (text.equals("TASDIQLANDI✔")) {
                     getBtn(chatId, "tanlang", messageId, BotConfig.CARS);
-                }else if (text.equals("ORQAGA↪")){
+                } else if (text.equals("ORQAGA↪")) {
                     getBtn(chatId, "tanlang", messageId, BotConfig.CARS);
 
 //                    else {
